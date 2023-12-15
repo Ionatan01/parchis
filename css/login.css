@@ -1,0 +1,44 @@
+.login-container {
+    color: #fff;
+}
+
+#login {
+    width: 550px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#login h1 {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+#login .label-input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    
+}
+
+#login .label-input-container input {
+    padding: 5px;
+    
+}
+
+#login .label-input-container input[type="submit"] {
+    margin: 10px 0;
+    
+}
+
+.login-container a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.login-container a:hover {
+    color: #96d3ff;
+}

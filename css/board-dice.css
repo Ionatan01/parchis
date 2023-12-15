@@ -1,0 +1,248 @@
+#dice {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dice img {
+    width: 100px;
+    height: 100px;
+}
+
+#dice img:hover {
+    width: 105px;
+    height: 105px;
+    transition: .08s ease-in-out;
+    background: radial-gradient(circle at center, #fff, transparent 65%);
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 90px);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #board-container {
+    width: 602px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container #board .subdivider {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #aaa;
+}
+
+
+
+/* Big color quadrant styles */
+.container #board .center {
+    background-color: #fff;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.container #board .yellow {
+    background-color: yellow;
+    border-radius: 5px 0px 0px 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container #board .green {
+    background-color: #0f0;
+    border-radius: 0px 5px 0px 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container #board .blue {
+    background-color: #00f;
+    border-radius: 0px 0px 0px 5px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container #board .red {
+    background-color: #f00;
+    border-radius: 0px 0px 5px 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+
+/* Coloured positions styles */
+.container #board .subdivider .position {
+    width: 33.3%;
+    border: 1px solid #000;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container #board .left .position ,
+.container #board .right .position {
+    height: 33.3%;
+    width: calc(200px / 7);
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.container #board .yellow .position:nth-child(){
+    background-color: yellow;
+    border-radius: 5px 0px 0px 0px;
+}
+
+.container #board .green .position:nth-child(){
+    background-color: #0f0;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.container #board .blue .position {
+    background-color: #00f;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.container #board .top .position:nth-child(3n + 5) {
+    background-color: yellow;
+}
+
+.container #board .top .position:nth-child(10) {
+    /* background: radial-gradient(circle at center, yellow 40%, #000, yellow 50%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: yellow;
+}
+
+.container #board .top .position:nth-child(2),
+.container #board .top .position:nth-child(12) {
+    /* background: radial-gradient(circle at center, transparent 40%, #000, transparent 50%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: transparent;
+}
+
+
+.container #board .right .position:nth-child(n + 8) {
+    background-color: #0f0;
+}
+
+.container #board .right .position:nth-child(n + 14) {
+    background-color: #fff;
+}
+
+.container #board .right .position:nth-child(4) {
+    /* background: radial-gradient(circle at center, #00f 40%, #000, #00f 50%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: #0f0;
+}
+
+.container #board .right .position:nth-child(14),
+.container #board .right .position:nth-child(18) {
+    /* background: radial-gradient(circle at center, transparent 50%, #000, transparent 40%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: transparent;
+}
+
+.container #board .left .position:nth-child(n + 9) {
+    background-color: #00f;
+}
+
+.container #board .left .position:nth-child(n + 15) {
+    background-color: #fff;
+}
+
+.container #board .left .position:nth-child(18) {
+    /* background: radial-gradient(circle at center, #00f 40%, #000, #00f 50%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: #00f;
+}
+
+.container #board .left .position:nth-child(4),
+.container #board .left .position:nth-child(8) {
+    /* background: radial-gradient(circle at center, transparent 50%, #000, transparent 40%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: transparent;
+}
+
+.container #board .bottom .position:nth-child(-3n + 17) {
+    background-color: #f00;
+}
+
+.container #board .bottom .position:nth-child(12) {
+    /* background: radial-gradient(circle at center, #f00 40%, #000, #f00 50%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: #f00;
+}
+
+.container #board .bottom .position:nth-child(20),
+.container #board .bottom .position:nth-child(10) {
+    /* background: radial-gradient(circle at center, transparent 40%, #000, transparent 50%);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: transparent;
+}
+
+.container #board .piece.yellow {
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 20px;
+    width: 20px;
+}
+
+.container #board .piece.green {
+    background-color: #0f0;
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 20px;
+    width: 20px;
+}
+
+.container #board .piece.blue {
+    background-color: #00f;
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 20px;
+    width: 20px;
+}
+
+.container #board .piece.red {
+    background-color: #f00;
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 20px;
+    width: 20px;
+}

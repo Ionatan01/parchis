@@ -1,0 +1,46 @@
+#header {
+    width: 100vw;
+    height: 90px;
+    padding: 0px 15px;
+    border-bottom: 2px solid #fff;
+    background-color: #030e3b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+#header .logo img {
+    width: 40px;
+}
+
+#header .right {
+    display: flex;
+}
+
+#header .right a {
+    color: #fff;
+}
+
+#header .game-info {
+    display: none;
+    align-items: center;
+    margin-right: 5px;
+    font-size: 18px;
+    flex-direction: column;
+}
+
+#header .logout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#upload-game {
+    display: none;
+}
