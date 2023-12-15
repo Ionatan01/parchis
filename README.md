@@ -5,14 +5,14 @@ Para abrir el proyecto simplemente hay que abrir index.html en Live Server
 
 Enlaces:
 Pagina de bienvenida:
-IP/index.html#/
+/index.html#/
 
 Login
-IP/index.html#/login
+/index.html#/login
 
 Registro
-IP/index.html#/register
+/index.html#/register
 
 Juego
-IP/index.html#/game
+/index.html#/game
 
